@@ -41,6 +41,7 @@ public class CacheConfiguration {
             cm.createCache(com.ms.jpdf.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.ms.jpdf.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.ms.jpdf.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.ms.jpdf.domain.Task.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
